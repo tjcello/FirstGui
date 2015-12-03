@@ -31,7 +31,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="textTemperature" min="-2" pref="48" max="-2" attributes="0"/>
+                  <Component id="textFahrenheit" min="-2" pref="48" max="-2" attributes="0"/>
                   <Component id="buttonForCelcius" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -39,9 +39,9 @@
                   <Group type="102" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="textTemperatureC" min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="textCelcius" min="-2" pref="118" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="FahrButton" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonForFahrenheit" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="124" max="32767" attributes="0"/>
           </Group>
@@ -53,14 +53,14 @@
               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="tmpFahr" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="textTemperature" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="textTemperatureC" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textFahrenheit" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textCelcius" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="buttonForCelcius" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="FahrButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonForFahrenheit" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="191" max="32767" attributes="0"/>
           </Group>
@@ -73,9 +73,9 @@
         <Property name="text" type="java.lang.String" value="Enter Degrees in Fahrenheit"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="textTemperature">
+    <Component class="javax.swing.JTextField" name="textFahrenheit">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textTemperatureActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFahrenheitActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="buttonForCelcius">
@@ -86,17 +86,17 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonForCelciusActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="textTemperatureC">
+    <Component class="javax.swing.JTextField" name="textCelcius">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textTemperatureCActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textCelciusActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="FahrButton">
+    <Component class="javax.swing.JButton" name="buttonForFahrenheit">
       <Properties>
         <Property name="text" type="java.lang.String" value="Convert to Fahrenheit"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FahrButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonForFahrenheitActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">

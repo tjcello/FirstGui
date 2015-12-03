@@ -10,7 +10,7 @@ package firstgui;
  * @author tduwe
  */
 public class TemperatureConverter extends javax.swing.JFrame {
-    
+
     /**
      * Creates new form TemperatureConverter
      */
@@ -28,19 +28,19 @@ public class TemperatureConverter extends javax.swing.JFrame {
     private void initComponents() {
 
         tmpFahr = new javax.swing.JLabel();
-        textTemperature = new javax.swing.JTextField();
+        textFahrenheit = new javax.swing.JTextField();
         buttonForCelcius = new javax.swing.JButton();
-        textTemperatureC = new javax.swing.JTextField();
-        FahrButton = new javax.swing.JButton();
+        textCelcius = new javax.swing.JTextField();
+        buttonForFahrenheit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         tmpFahr.setText("Enter Degrees in Fahrenheit");
 
-        textTemperature.addActionListener(new java.awt.event.ActionListener() {
+        textFahrenheit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textTemperatureActionPerformed(evt);
+                textFahrenheitActionPerformed(evt);
             }
         });
 
@@ -51,16 +51,16 @@ public class TemperatureConverter extends javax.swing.JFrame {
             }
         });
 
-        textTemperatureC.addActionListener(new java.awt.event.ActionListener() {
+        textCelcius.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textTemperatureCActionPerformed(evt);
+                textCelciusActionPerformed(evt);
             }
         });
 
-        FahrButton.setText("Convert to Fahrenheit");
-        FahrButton.addActionListener(new java.awt.event.ActionListener() {
+        buttonForFahrenheit.setText("Convert to Fahrenheit");
+        buttonForFahrenheit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FahrButtonActionPerformed(evt);
+                buttonForFahrenheitActionPerformed(evt);
             }
         });
 
@@ -77,15 +77,15 @@ public class TemperatureConverter extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(91, 91, 91)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(textTemperature, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFahrenheit, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonForCelcius))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addComponent(textTemperatureC, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(FahrButton))
+                        .addComponent(textCelcius, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonForFahrenheit))
                 .addGap(0, 124, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -94,13 +94,13 @@ public class TemperatureConverter extends javax.swing.JFrame {
                 .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tmpFahr)
-                    .addComponent(textTemperature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textTemperatureC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFahrenheit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textCelcius, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonForCelcius)
-                    .addComponent(FahrButton))
+                    .addComponent(buttonForFahrenheit))
                 .addContainerGap(191, Short.MAX_VALUE))
         );
 
@@ -109,36 +109,31 @@ public class TemperatureConverter extends javax.swing.JFrame {
 
     private void buttonForCelciusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonForCelciusActionPerformed
         // TODO add your handling code here:
-        double temp = Double.parseDouble(textTemperature.getText());
-        textTemperatureC.setText(String.valueOf((temp  -  32) *  5/9));
-        
-        
-        
-        
+        double temp = Double.parseDouble(textFahrenheit.getText());
+        textCelcius.setText(String.valueOf((temp - 32) * 5 / 9));
     }//GEN-LAST:event_buttonForCelciusActionPerformed
 
-    private void textTemperatureCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textTemperatureCActionPerformed
+    private void textCelciusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textCelciusActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textTemperatureCActionPerformed
+    }//GEN-LAST:event_textCelciusActionPerformed
 
-    private void textTemperatureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textTemperatureActionPerformed
+    private void textFahrenheitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFahrenheitActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textTemperatureActionPerformed
+    }//GEN-LAST:event_textFahrenheitActionPerformed
 
-    private void FahrButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FahrButtonActionPerformed
+    private void buttonForFahrenheitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonForFahrenheitActionPerformed
         // TODO add your handling code here:
-        double temp = Double.parseDouble(textTemperatureC.getText());
-        textTemperature.setText(String.valueOf(temp *  9/5 + 32 ));
-    }//GEN-LAST:event_FahrButtonActionPerformed
+        double temp = Double.parseDouble(textCelcius.getText());
+        textFahrenheit.setText(String.valueOf(temp * 9 / 5 + 32));
+    }//GEN-LAST:event_buttonForFahrenheitActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton FahrButton;
     private javax.swing.JButton buttonForCelcius;
+    private javax.swing.JButton buttonForFahrenheit;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField textTemperature;
-    private javax.swing.JTextField textTemperatureC;
+    private javax.swing.JTextField textCelcius;
+    private javax.swing.JTextField textFahrenheit;
     private javax.swing.JLabel tmpFahr;
     // End of variables declaration//GEN-END:variables
 }
